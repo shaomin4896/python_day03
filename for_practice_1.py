@@ -43,4 +43,19 @@ for i in range(1,11):
 print("-------------")
 for i in range(0,10):
     print(' '*(10-i)+'*'*i*2+'*')
+#3_1 挑戰費式數列 <= 100
+num_list = [1,1]
+for i in range(9999):
+    num = num_list[len(num_list)-1] + num_list[len(num_list)-2]
+    if num <= 100:
+        num_list.append(num)
+print(num_list)
+#3_2 挑戰質數 2-100
+for i in range(2,101):
+    flag = True
+    for x in range(2,i):
+        if i % x == 0:
+            flag = False
+    if flag:
+        print(i)
 
