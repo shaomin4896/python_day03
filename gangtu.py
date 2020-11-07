@@ -9,7 +9,7 @@ class pictor:
     index = 0
     
 pict = pictor()
-pict.sentence = ["我就爛~~","曾子睿","","124"]
+pict.sentence = ["bb~~","aa","","124"]
 pict.index = random.randint(0,len(pict.sentence)-1)
 
 def loop():
